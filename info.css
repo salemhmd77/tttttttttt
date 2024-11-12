@@ -1,0 +1,50 @@
+/* file: styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.love-text {
+    font-size: 4rem;
+    color: rgb(255, 0, 0); /* Initial color */
+    text-shadow: 
+        0 0 5px rgba(255, 0, 0, 0.7),
+        0 0 10px rgba(255, 0, 0, 0.5),
+        0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.love-text:hover {
+    transform: scale(1.1);
+    animation: pulse 1s infinite; /* Pulse effect on hover */
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 
+            0 0 5px rgba(255, 0, 0, 0.7),
+            0 0 10px rgba(255, 0, 0, 0.5),
+            0 0 15px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+        text-shadow: 
+            0 0 20px rgba(255, 0, 0, 1),
+            0 0 30px rgba(255, 0, 0, 0.7),
+            0 0 40px rgba(255, 0, 0, 0.5);
+    }
+    100% {
+        text-shadow: 
+            0 0 5px rgba(255, 0, 0, 0.7),
+            0 0 10px rgba(255, 0, 0, 0.5),
+            0 0 15px rgba(255, 0, 0, 0.3);
+    }
+}
